@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:p4="http://xamarin.com/mono/android/designer"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@color/ic_launcher_background"
+    android:paddingLeft="15px"
+    android:paddingRight="15px">
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="144.5dp"
+        android:id="@+id/tableLayout1"
+        android:layout_marginBottom="8.0dp"
+        android:background="@drawable/radios"
+        android:paddingBottom="5px"
+        android:paddingLeft="8px"
+        android:paddingRight="8px"
+        android:paddingTop="5px">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="139.5dp"
+            android:layout_width="match_parent">
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_column="0"
+                android:id="@+id/imageView1"
+                android:layout_height="138.0dp"
+                android:layout_width="120.0dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_column="1"
+                android:id="@+id/linearLayout1"
+                android:layout_width="268.7dp"
+                android:layout_height="137.5dp"
+                android:layout_marginLeft="10.0px">
+                <TextView
+                    android:text="Large Text"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="33.0dp"
+                    android:id="@+id/txtMobName" />
+                <TextView
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="20.0dp"
+                    android:id="@+id/txtDis"
+                    android:drawableEnd="#ff000000"
+                    android:scrollHorizontally="false" />
+                <TextView
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="20.0dp"
+                    android:id="@+id/txtCam" />
+                <TextView
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="20.0dp"
+                    android:id="@+id/txtProc"
+                    android:contextClickable="false" />
+                <TextView
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="20.0dp"
+                    android:id="@+id/txtBat" />
+                <TextView
+                    android:text="Small Text"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="20.0dp"
+                    android:id="@+id/txtPrice" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

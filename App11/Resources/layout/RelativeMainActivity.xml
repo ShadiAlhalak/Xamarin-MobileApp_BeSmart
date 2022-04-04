@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+   <RelativeLayout
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15px"
+        android:paddingRight="15px"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/container2"
+        android:background="@drawable/radios_transparent"
+        android:layout_marginBottom="4.0dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="42.4dp"
+            android:layout_toRightOf="@+id/btnSearch"
+            android:background="@drawable/radios"
+            android:textSize="20dp"
+            android:hint="search"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="0.0dp" >
+        </com.google.android.material.textfield.TextInputEditText>
+        <ImageButton
+            android:src="?android:attr/actionModeWebSearchDrawable"
+            android:layout_height="42.4dp"
+            android:id="@+id/btnSearch"
+            android:background="@drawable/radios"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="58.8dp" >
+        </ImageButton>
+    </RelativeLayout>
+
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView1"
+        android:scrollbars="none"
+        android:layout_below="@+id/container2"
+        android:requiresFadingEdge="none|horizontal"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:divider="@null"
+  />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/windowBackground"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation"
+        android:layout_alignParentEnd="false"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true" >
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

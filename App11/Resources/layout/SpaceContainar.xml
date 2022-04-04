@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout1"
+    android:paddingRight="7px">
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tableLayout1"
+        android:paddingLeft="7px">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_column="0"
+                android:id="@+id/txtTitle"
+                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:textColor="#ff13729b"
+                android:layout_marginBottom="4.8dp"
+                android:layout_marginRight="5.2dp"/>
+            <TextView
+                android:minWidth="30px"
+                android:minHeight="30px"
+                android:id="@+id/textView2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <TextView
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_column="0"
+                android:id="@+id/txt1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+               />
+            <me.grantland.widget.AutofitTextView
+                android:text=""
+                android:layout_column="1"
+                android:id="@+id/val1"
+                android:singleLine="false"
+                android:gravity="left"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <TextView
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_column="0"
+                android:id="@+id/txt2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <me.grantland.widget.AutofitTextView
+                android:text=""
+                android:layout_column="1"
+                android:id="@+id/val2"
+                android:singleLine="false"
+                android:gravity="left"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <TextView
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_column="0"
+                android:id="@+id/txt3"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" />
+            <me.grantland.widget.AutofitTextView
+                android:text=""
+                android:layout_column="1"
+                android:id="@+id/val3"
+                android:singleLine="false"
+                android:gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+  />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <me.grantland.widget.AutofitTextView
+                android:text="Small Text"
+                android:layout_column="0"
+                android:id="@+id/txt4"
+                android:singleLine="true"
+                android:maxLines="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+             />
+            <me.grantland.widget.AutofitTextView
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_column="1"
+                android:id="@+id/val4"
+                android:singleLine="true"
+                android:maxLines="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+    />
+
+        </TableRow>
+          <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <me.grantland.widget.AutofitTextView
+                android:text="Small Text"
+                android:layout_column="0"
+                android:id="@+id/txt5"
+                android:singleLine="true"
+                android:maxLines="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+             />
+            <me.grantland.widget.AutofitTextView
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_column="1"
+                android:id="@+id/val5"
+                android:singleLine="true"
+                android:maxLines="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+    />
+
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
